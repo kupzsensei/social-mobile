@@ -1,24 +1,29 @@
 import Navbar from "./components/navbar";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
-import { Video, Images, PlusCircle, X, Ellipsis } from "lucide-react";
-import { Separator } from "@/components/ui/separator";
+import { Video, Images, PlusCircle } from "lucide-react";
 import PostCard from "./components/postcard";
+import {Button} from '@/components/ui/button'
+
 
 function App() {
+  // const navigate = useNavigate();
+  // const userInfo = jwtDecode(sessionStorage?.getItem("user"));
+
   return (
     <main className="w-screen h-screen bg-black/80 flex flex-col gap-3 overflow-y-auto">
       <Navbar />
       <div className="flex flex-col bg-black/60">
         <div className="flex gap-2 items-center p-2 bg-black/80 border-b py-5 border-gray-300">
           <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarImage src="https://www.mfi.org.ph/wp-content/uploads/2020/04/mfi-logo.png" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <Input
             className="rounded-xl bg-gray-300"
-            placeholder="What's on your mind . Leonel Greg ?"
+            // placeholder={`What's on your mind . ${userInfo?.username} ?`}
           />
+          <Button>Post</Button>
         </div>
         <div className="flex bg-black/80 py-3">
           <span className="flex-1 flex justify-center items-center gap-2 text-white/80 font-bold">

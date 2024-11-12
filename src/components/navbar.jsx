@@ -1,11 +1,13 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
+// import { jwtDecode } from "jwt-decode";
 export default function Navbar() {
+  // const userinfo = jwtDecode(sessionStorage.getItem('user'))
   return (
     <nav className="flex gap-5 p-2 items-center bg-black/80">
       <div>
-        <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" />
+        <Avatar className="object-contain">
+          <AvatarImage  src="https://www.mfi.org.ph/wp-content/uploads/2020/04/mfi-logo.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </div>
