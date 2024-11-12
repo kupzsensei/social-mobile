@@ -1,7 +1,7 @@
 import Navbar from "./components/navbar";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
-import { Video, Images, PlusCircle } from "lucide-react";
+import { Video, Images, PlusCircle  } from "lucide-react";
 import PostCard from "./components/postcard";
 import {Button} from '@/components/ui/button'
 
